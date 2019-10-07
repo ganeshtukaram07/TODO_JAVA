@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ToDoList</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+ <servlet-name>Registration</servlet-name>
+ <servlet-class>com.todolist.Registration</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>Registration</servlet-name>
+ <url-pattern>/Registration</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet>
+ <servlet-name>AddListServlet</servlet-name>
+ <servlet-class>com.todolist.AddListServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>AddListServlet</servlet-name>
+ <url-pattern>/AddListServlet</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <servlet-name>AddSubListServlet</servlet-name>
+ <servlet-class>com.todolist.AddSubListServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>AddSubListServlet</servlet-name>
+ <url-pattern>/AddSubListServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>DeleteList</servlet-name>
+ <servlet-class>com.todolist.DeleteList</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>DeleteList</servlet-name>
+ <url-pattern>/DeleteList</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>ShareListServlet</servlet-name>
+ <servlet-class>com.todolist.ShareListServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>ShareListServlet</servlet-name>
+ <url-pattern>/ShareListServlet</url-pattern>
+ </servlet-mapping>
+ 
+  
+</web-app>
